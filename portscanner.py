@@ -3,9 +3,9 @@
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-host = input(str('enter host:'))
-port = int(input('enter port number:'))
+socket.setdefaulttimeout(2)
+host = input(str('[*]enter host to scan:'))
+port = int(input('[*]enter port number to scan:'))
 
 def portscanner(port):
     if sock.connect_ex((host, port)):
