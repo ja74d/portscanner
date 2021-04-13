@@ -17,7 +17,7 @@ def portscanner(port):
     if sock.connect_ex((host, port)):
         print(colored(f'[!!]port {port} is clodes', 'red'))
     else:
-        print(colored(f'[+]port {port} is open', 'red'))
+        print(colored(f'[+]port {port} is open', 'green'))
 
 if sporrport == '1':
     port = int(input('[*]enter port number to scan:'))
