@@ -14,9 +14,9 @@ sporrport = input(str('''single port or range port:
 #def part!
 def portscanner(port):
     if sock.connect_ex((host, port)):
-        print(f'port {port} is clodes')
+        print(f'[!!]port {port} is clodes')
     else:
-        print(f'port {port} is open')
+        print(f'[+]port {port} is open')
 if sporrport == '1':
     port = int(input('[*]enter port number to scan:'))
     portscanner(port)
