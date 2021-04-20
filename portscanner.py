@@ -23,7 +23,7 @@ if sporrport == '1':
     port = int(input('[*]enter port number to scan:'))
     portscanner(port)
 elif sporrport == '2':
-    start = int(input('enter start of range:'))
-    end = int(input('enter end of range:'))
+    start = int(input('start with:'))
+    end = int(input('end with:'))
     for port in range(start, end):
         portscanner(port)
