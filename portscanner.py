@@ -15,7 +15,7 @@ sporrport = input(str('''single port or range port:
 
 def portscanner(port):
     if sock.connect_ex((host, port)):
-        print(colored(f'[!!]port {port} is close', 'red'))
+        print(colored(f'[!!]port {port} is closed', 'red'))
     else:
         print(colored(f'[+]port {port} is open', 'green'))
 
